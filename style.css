@@ -8,22 +8,22 @@ body {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #1a73e8;
-  box-shadow: 0 0 20px rgba(26, 115, 232, 0.4);
+  border-radius: 40%;
+  border: 5px solid #7665c7;
+  box-shadow: 0 0 20px rgba(126, 121, 224, 0.4);
 }
 
 .bio-text {
   font-size: 1.1rem;
-  color: #34495e;
+  color: #42345e;
   max-width: 600px;
 }
 h1, 
 h2 {
-  color: #1a1a2e;
+  color: #7878d8;
 }
 
 .card-title {
   font-weight: 600;
-  color: #1a73e8;
+  color: #1758ae;
 }
