@@ -1,29 +1,40 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Body styling */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e9f5f9;
-  color: #2c3e50;
+  background-color: #e6f2f5;
+  color: #333;
 }
 
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #6c63ff;
+}
+
+/* Profile Image */
 .profile-img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 40%;
-  border: 5px solid #7665c7;
-  box-shadow: 0 0 20px rgba(126, 121, 224, 0.4);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
-.bio-text {
-  font-size: 1.1rem;
-  color: #42345e;
-  max-width: 600px;
-}
-h1, 
-h2 {
-  color: #7878d8;
+.profile-img:hover {
+  transform: scale(1.05);
 }
 
-.card-title {
-  font-weight: 600;
-  color: #1758ae;
+/* Navbar link hover */
+.nav-link:hover {
+  color: #dcd6ff !important;
+  transition: color 0.3s ease;
+}
+
+/* Footer styling */
+footer {
+  font-size: 0.9rem;
+  color: #555;
 }
