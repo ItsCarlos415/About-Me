@@ -13,6 +13,12 @@ h1, h2, h3, h4, h5 {
   color: #6c63ff;
 }
 
+/* Bio text styling */
+.bio-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 /* Profile Image */
 .profile-img {
   width: 250px;
