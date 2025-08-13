@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* Light & Dark Themes */
 body.light-theme {
   background-color: #e6f2f5;
@@ -10,14 +15,64 @@ body.dark-theme {
   color: #f0f0f0;
 }
 
-/* Splash Page Light/Dark */
+/* Splash Page */
+.splash {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: background 0.5s ease, color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Animated gradient background for splash */
 .splash.light-theme {
-  background: linear-gradient(135deg, #6c63ff, #42a5f5);
+  background: linear-gradient(-45deg, #6c63ff, #42a5f5, #ff6f91, #f9c74f);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: white;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .splash.dark-theme {
   background-color: #121212;
   color: #f0f0f0;
+}
+
+.splash h1.display-4 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+.splash p.lead {
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+/* Footer in Splash */
+.splash-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Buttons hover effect */
+.splash button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.splash button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* Profile Image */
@@ -54,4 +109,9 @@ h1, h2, h3, h4, h5 {
 footer {
   font-size: 0.9rem;
   color: #555;
+}
+
+/* Fix blank space above About Me (adjust for fixed-top navbar) */
+#main-content {
+  padding-top: 80px;
 }
