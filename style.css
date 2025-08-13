@@ -1,11 +1,36 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* Body styling */
-body {
-  font-family: 'Poppins', sans-serif;
+/* Light & Dark Themes */
+body.light-theme {
   background-color: #e6f2f5;
   color: #333;
+}
+body.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Splash Page Light/Dark */
+.splash.light-theme {
+  background: linear-gradient(135deg, #6c63ff, #42a5f5);
+  color: white;
+}
+.splash.dark-theme {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
 }
 
 /* Headings */
@@ -13,24 +38,10 @@ h1, h2, h3, h4, h5 {
   color: #6c63ff;
 }
 
-/* Bio text styling */
+/* Bio text */
 .bio-text {
   font-size: 1.1rem;
   line-height: 1.6;
-}
-
-/* Profile Image */
-.profile-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-}
-
-.profile-img:hover {
-  transform: scale(1.05);
 }
 
 /* Navbar link hover */
